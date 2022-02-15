@@ -56,4 +56,4 @@ def test_akss():
     
     #computation of probability with AK-SS
     my_AK_four_branch.compute_proba()
-    assert my_AK_four_branch.getFailureProbability()== pytest.approx(0.0046,abs=1e-4)
+    assert my_AK_four_branch.getFailureProbability()== pytest.approx(0.0047,abs=1e-4)
