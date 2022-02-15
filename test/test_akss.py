@@ -2,6 +2,7 @@ import openturns as ot
 import pytest
 import numpy as np
 import otak
+ot.RandomGenerator.SetSeed(1)
 
 # Definition of test case : Four Branchfunction
 dim_inputs = 2
@@ -55,5 +56,4 @@ def test_akss():
     
     #computation of probability with AK-SS
     my_AK_four_branch.compute_proba()
-    print(my_AK_four_branch.getFailureProbability())
-    assert my_AK_four_branch.getFailureProbability()== pytest.approx(0.0044,abs=1e-4)
+    assert my_AK_four_branch.getFailureProbability()== pytest.approx(0.0046,abs=1e-4)
