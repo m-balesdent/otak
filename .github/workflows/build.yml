@@ -11,7 +11,7 @@ jobs:
       - name: Build
         shell: bash -l {0}
         run: |
-          conda install -y openturns pytest sphinx sphinx-gallery numpydoc pandoc
+          conda install -y openturns pytest sphinx sphinx-gallery numpydoc pandoc sphinx-rtd-theme
           python setup.py install
           pytest
           sudo apt install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
