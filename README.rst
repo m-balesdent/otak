@@ -2,7 +2,7 @@
     :target: https://github.com/openturns/otsklearn/actions/workflows/build.yml
 
 otak
-=========
+====
 
 Simple module that implements Active learning Kriging methods for reliability analysis.
 

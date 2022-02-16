@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ot-AK documentation
-=================================
+===================
 
 .. image:: _static/AK_methods.png
      :align: left
@@ -21,7 +21,7 @@ the area that are relevant to the reliability problem (in the vicinity of limit 
 high probabilistic content).
 
 Theory
------------
+------
 
 
 .. toctree::
@@ -41,7 +41,7 @@ User documentation
 
 
 Examples 
------------
+--------
 
 .. toctree::
    :maxdepth: 2  

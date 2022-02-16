@@ -1,5 +1,5 @@
 User manual
-============
+===========
 
 .. currentmodule:: otak
 
