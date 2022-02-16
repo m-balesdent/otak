@@ -11,9 +11,11 @@ jobs:
       - name: Build
         shell: bash -l {0}
         run: |
-          conda install -y openturns pytest
+          conda install -y openturns pytest sphinx sphinx-gallery numpydoc pandoc
           python setup.py install
           pytest
+          sudo apt install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
+          make html -C doc
       - name: Upload
         if: ${{ github.ref == 'refs/heads/master' }}          
         run: |
