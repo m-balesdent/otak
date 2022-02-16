@@ -2,12 +2,12 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
+SPHINXOPTS    = -W -T
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = ../build
+BUILDDIR      = _build
 PDFBUILDDIR   = /tmp
-PDF           = $(BUILDDIR)
+PDF           = ../otpod-Documentation.pdf
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -17,9 +17,9 @@ endif
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
-ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
+ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 # the i18n builder cannot share the environment and doctrees with the others
-I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
+I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 .PHONY: help
 help:
@@ -96,9 +96,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/otfmi.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/otpod.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/otfmi.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/otpod.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -115,8 +115,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/otfmi"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/otfmi"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/otpod"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/otpod"
 	@echo "# devhelp"
 
 .PHONY: epub
