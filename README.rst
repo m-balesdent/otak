@@ -17,6 +17,11 @@ Three methods are present :
 These methods are built on top of OpenTURNS classes for failure probability estimation and Kriging.
 
 
+Requirements
+============
+- numpy
+ - openturns >1.18
+
 
 Documentation
 =============
