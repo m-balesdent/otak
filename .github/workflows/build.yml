@@ -22,7 +22,7 @@ jobs:
         run: |
           git clone --depth 1 https://${{ secrets.GH_TOKEN }}@github.com/m-balesdent/m-balesdent.github.io.git /tmp/io
           mkdir -p /tmp/io/otak/master
-          cp -r html/* /tmp/io/otak/master
+          cp -r doc/_build/html/* /tmp/io/otak/master
           cd /tmp/io
           touch .nojekyll
           git config user.email "support@gh.com"
