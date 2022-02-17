@@ -93,7 +93,8 @@ exclude_patterns = []
 
 # -- Options for HTML output ----------------------------------------------
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'openturns'
+html_theme_path = ['themes']
 # html_sidebars = {
 #     '**': [
 #         # 'about.html',
@@ -138,3 +139,16 @@ templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 source_suffix = ['.rst']
+
+
+
+man_pages = [
+    ('index', 'otak', u'otak Documentation',
+     [u'Airbus-EDF-IMACS-Phimeca-ONERA'], 1)
+]
+
+texinfo_documents = [
+    ('index', 'otak', u'otak Documentation',
+   u'Airbus-EDF-IMACS-Phimeca-ONERA', 'otak', 'Module implementing AK methods for reliability analysis.',
+   'Miscellaneous'),
+]
