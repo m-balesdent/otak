@@ -15,3 +15,5 @@ Three methods are present :
 -- AK-SS : Active learning reliability method combining Kriging and Subset Simulation
 
 These methods are built on top of OpenTURNS classes for failure probability estimation and Kriging.
+
+Documentation is available :ref:`https://m-balesdent.github.io/otak/master/'
