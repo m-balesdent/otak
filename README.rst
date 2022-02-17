@@ -20,7 +20,7 @@ These methods are built on top of OpenTURNS classes for failure probability esti
 Requirements
 ============
 - numpy
- - openturns >1.18
+- openturns >1.18
 
 
 Documentation
