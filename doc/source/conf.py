@@ -39,8 +39,10 @@ release = '0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
+    'sphinx.ext.todo',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.autosummary',
+    'numpydoc',
     'sphinx_gallery.gen_gallery',
 ]
 
@@ -60,18 +62,6 @@ else:
     autodoc_default_flags =  ['members', 'inherited-members']
 
 intersphinx_mapping = {'openturns': ('http://openturns.github.io/openturns/latest', None)}
-autosummary_generate = True
-
-'''
-if LooseVersion(sphinx.__version__) < '1.3':
-    # always use local inventory
-    inventory = 'openturns-objects.inv'
-else:
-    # try to download inventory else fallback to local inventory
-    inventory = (None, 'openturns-objects.inv')
-intersphinx_mapping = {'openturns': ('http://openturns.github.io/openturns/latest', inventory)}
-'''
-
 autosummary_generate = True
 
 numpydoc_show_class_members = True
