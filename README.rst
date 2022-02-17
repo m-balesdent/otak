@@ -16,4 +16,4 @@ Three methods are present :
 
 These methods are built on top of OpenTURNS classes for failure probability estimation and Kriging.
 
-Documentation is available :ref:`https://m-balesdent.github.io/otak/master/'
+Documentation : `https://m-balesdent.github.io/otak/master/'
