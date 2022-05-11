@@ -1,3 +1,5 @@
+.. image:: https://github.com/m-balesdent/otak/actions/workflows/build.yml/badge.svg?branch=master
+    :target: https://github.com/m-balesdent/otak/actions/workflows/build.yml
 
 otak
 ====
