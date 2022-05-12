@@ -1,5 +1,3 @@
-.. image:: https://github.com/openturns/otsklearn/actions/workflows/build.yml/badge.svg?branch=master
-    :target: https://github.com/openturns/otsklearn/actions/workflows/build.yml
 
 otak
 ====
